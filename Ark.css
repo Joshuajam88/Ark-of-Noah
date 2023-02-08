@@ -69,10 +69,6 @@ body{
 }
 
 
-
-
-
-
 @media only screen and (max-width: 650px) {
     body{
         padding: 0;
@@ -93,9 +89,7 @@ body{
     }
     .card{
         background-color: black;
-        /* padding: 14px 18px; */
         margin: 0 10px 20px 20px;
         width: 280px;
-        /* height: 300px; */
     }
 }
