@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(233, 231, 231);
+    background-color: #212930;
+}
+.header{
+    line-height: 5px;
+    text-align: center;
+    background-color:#11151A;
+    padding: 50px 18px;
+}
+.head-text{
+    font-size: 35px;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+.head-para{
+    font-weight: 600;
+}
+.logo-img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 100px;
+    border-width: 1px;
+    background-color: black;
+}
+.icons{
+    color: white;
+    padding: 0 14px 0 0;
+   
+}
+.icons:hover{
+    color: whitesmoke;
+    transition: 0.3s linear;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+    transition-property: color;
+}
+
+.connect{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 25px 14px;
+}
+.card a{
+    color: white;
+}
+.card{
+    background-color: #212939;
+    border-radius: 15px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+}
+
+.calender{
+    color: rgb(156, 30, 30);
+}
+.Birthday{
+    padding: 20px;
+}
+.arrow{
+    padding: 40px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .head-para{
+        font-size: 13px;
+        line-height: normal;
+        font-weight: 800;
+    }
+
+    .head-text{
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+    .arrow{
+        display: none;
+    }
+    .card{
+        background-color: black;
+        /* padding: 14px 18px; */
+        margin: 0 10px 20px 20px;
+        width: 280px;
+        /* height: 300px; */
+    }
+}
