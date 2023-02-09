@@ -1,10 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(233, 231, 231);
     background-color: #212930;
+    
 }
 .header{
     line-height: 5px;
@@ -67,6 +67,129 @@ body{
 .arrow{
     padding: 40px;
 }
+.btn-dark{
+    display: none;
+}
+
+
+/* card image swipper start*/
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: black;
+    padding: 40px 0;
+}
+.slide-content{
+    display: none;
+    margin: 0 40px;
+    background-color: #212930;
+    overflow: hidden;
+    border-radius: 25px;
+    border-bottom-width: 50px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #11151A;
+}
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222a33;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #222a33;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #11151A;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #11151A;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #efefef;
+}
+.description{
+    font-size: 14px;
+    color: #dfdfdf;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #212930;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #323c44;
+}
+.swiper-navBtn{
+    color: #323c44;
+    transition:  color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #242b31;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullets{
+    opacity: 1;
+}
+.swiper-pagination-bullets-active{
+    background-color: #fff;
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 650px) {
@@ -89,7 +212,18 @@ body{
     }
     .card{
         background-color: black;
-        margin: 0 10px 20px 20px;
-        width: 280px;
+        display: none;
+        width: 90%;
     }
+    .btn-dark{
+        display: block;
+        align-items: center;
+    }
+    .overlay::after{
+        background-color: black;
+    }
+   .slide-content{
+    display: flex;
+    background-color: black;
+   }
 }

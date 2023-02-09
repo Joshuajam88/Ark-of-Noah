@@ -25,6 +25,8 @@
     <!-- MDB -->
     <script> type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
 </head>
 <body>
     <section class="header">
@@ -57,7 +59,7 @@
         </div>
 
         <div class="container card" aria-setsize="100px">
-            <a href="#">
+            <a href="Birthday.html">
             <div class="row card-body">
                     <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-calendar calender" viewBox="0 0 16 16">
                         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -65,6 +67,9 @@
                     <div class="col-md-10 Birthday">
                         <h4>Birthday Celebration</h4>
                         <p>Please complete the form as required.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button type="button" class="btn btn-dark btn-rounded">Fill</button>
+                        </div>
                     </div>
                     <div class="col-md-1 arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -85,6 +90,9 @@
                     <div class="col-md-10 Birthday">
                         <h4>Ark of Noah Transport Service</h4>
                         <p>Please check the available routes and contact details of the driver. Thank you.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button type="button" class="btn btn-dark btn-rounded">Check routes</button>
+                        </div>                    
                     </div>
                     <div class="col-md-1 arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -106,6 +114,9 @@
                     <div class="col-md-10 Birthday">
                         <h4>Ark of Noah Podcast</h4>
                         <p>We exist to give eloquent expressionto the wisdom of God</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button type="button" class="btn btn-dark btn-rounded">Listen</button>
+                        </div>                    
                     </div>
                     <div class="col-md-1 arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
@@ -115,8 +126,74 @@
             </div>
             </a>
         </div>
-    </section>
-    <!-- Card end-point -->
 
+
+
+    </section>
+
+    <!-- Card image swipper starting point -->
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img src="img/calender.avif" alt="" class="card-img">
+                        </div>
+                    </div>
+    
+                    <div class="card-content">
+                        <h2 class="name">Birthday Celebration</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+    
+                        <a href="Birthday.html"><button class="button">Fill</button></a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img style="border-radius: 100%; width: 100%; height: 100%;" src="img/circle.avif" alt="" class="card-img">
+                        </div>
+                    </div>
+    
+                    <div class="card-content">
+                        <h2 class="name">Ark of Noah transport Service</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+    
+                        <button class="button">Check routes</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img style="border-radius: 100%;" src="img/podcast.avif" alt="" class="card-img">
+                        </div>
+                    </div>
+    
+                    <div class="card-content">
+                        <h2 class="name">Ark of Noah Podcast</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, obcaecati.</p>
+    
+                        <button class="button">Listen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Card swipper end-point -->
+    <script src="Ark.js"></script>
 </body>
 </html>
