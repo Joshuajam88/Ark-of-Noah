@@ -44,9 +44,17 @@ body{
 
 .connect{
     text-align: center;
-    font-size: 22px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 700;
     padding: 25px 14px;
+    text-transform: capitalize;
+}
+.social{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 25px 14px;
+    text-transform: capitalize;
 }
 .card a{
     color: white;
@@ -147,6 +155,7 @@ body{
     font-size: 14px;
     color: #dfdfdf;
     text-align: center;
+    text-transform: capitalize;
 }
 .button{
     border: none;
@@ -187,7 +196,28 @@ body{
 }
 
 
+/* Second section */
+.facebook{
+    font-size: 100px;
+    color: rgba(8, 59, 226, 0.795);
+}
+.whatsapp{
+    font-size: 100px;
+    color: rgba(3, 161, 3, 0.836);
+}
+.instagram{
+    font-size: 100px;
+    color: rgba(248, 35, 35, 0.918);
+}
 
+.footer{
+    text-align: center;
+    padding: 20px 18px;
+    margin: 50px 250px;
+    background: #11151A;
+    border-radius: 50px;
+    font-size: 15px;
+}
 
 
 
@@ -225,5 +255,20 @@ body{
    .slide-content{
     display: flex;
     background-color: black;
+   }
+   .social, .connect{
+    font-size: 22px;
+   }
+   .social-description, .description{
+    font-size: 14px;
+    font-weight: 100;
+   }
+   .social-name{
+    font-size: 20px;
+   }
+   .footer{
+    margin: 0;
+    padding: 0;
+    font-size: -20px;
    }
 }
